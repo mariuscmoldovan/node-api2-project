@@ -131,8 +131,5 @@ router.get('/:id/comments', (req, res) => {
     }
 })
 
-router.use('*', (req, res) => {
-    res.status(200).json({ message: 'hello world!'})
-})
 
 module.exports = router 
